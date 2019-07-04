@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigwise", "Bigwise\Bigwise.csproj", "{52FC45BB-ED84-404C-8862-1A089B06D68E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FC45BB-ED84-404C-8862-1A089B06D68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FC45BB-ED84-404C-8862-1A089B06D68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FC45BB-ED84-404C-8862-1A089B06D68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FC45BB-ED84-404C-8862-1A089B06D68E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB066B90-C443-44D1-A0A0-FC49771923E5}
+	EndGlobalSection
+EndGlobal

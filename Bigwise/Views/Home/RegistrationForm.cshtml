@@ -1,0 +1,61 @@
+﻿@model Bigwise.Models.Registration
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>RegistrationForm</title>
+</head>
+<body>
+    <div>
+        <div class="panel panel-success">
+            <div class="panel-heading text-center"><h4>Registration</h4></div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+
+                {
+                    @Html.ValidationSummary()
+                    <p>Please Subscribe to our products and Notifications</p>
+                    <div class="form-group">
+                        <label>Your name:</label>
+                        @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Your email:</label>
+                        @Html.TextBoxFor(x => x.CustomerEmail, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Your phone:</label>
+                        @Html.TextBoxFor(x => x.CustomerPhone, new { @class = "form-control" })
+                    </div>
+
+                    <div class="form-group">
+                        <label>Locaton:</label>
+                        @Html.TextBoxFor(x => x.Customerlocation, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Will you subscribe?</label>
+                        @Html.DropDownListFor(x => x.WillSubscribeCustomer, new[] {
+                        new SelectListItem() {Text = "Yes, am glad to recieve notifications from you",
+                        Value = bool.TrueString},
+                        new SelectListItem() {Text = "No",
+                        Value = bool.FalseString}
+                        }, "Choose an option", new { @class = "form-control" })
+                    </div>
+                    <div class="text-center">
+                        <input class="btn btn-success" type="submit" value="Submit Registration" />
+                    </div>
+                }
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

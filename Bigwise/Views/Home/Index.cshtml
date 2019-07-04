@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>Index</title>
+    <style>
+    .btn a { color: white; text-decoration: none}
+    body { background-color: #F1F1F1; }
+    </style>
+    </head>
+    <body>
+        <div class="text-center">
+            @ViewBag.Greeting
+            <p>
+                Welcome to Bigwise Retail Solution. We appreciate your choice of being with us.<br />
+                We welcome you to our fold.
+            </p>
+            <div class="btn btn-success">
+                @Html.ActionLink("Register Now As a Customer", "RegistrationForm")
+            </div>
+            <div class="btn btn-success">
+                @Html.ActionLink("Register Now As a Retailer", "RetailersForm")
+            </div>
+            <div class="btn btn-success">
+                @Html.ActionLink("Goods Registration", "GoodsForm")
+            </div>
+            <div class="btn btn-success">
+                @Html.ActionLink("Logistics Registration", "LogisticsForm")
+            </div>
+        </div>
+
+    </body>
+</html>

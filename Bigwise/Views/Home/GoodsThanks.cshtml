@@ -1,0 +1,30 @@
+﻿@model Bigwise.Models.Goods
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>GoodsThanks</title>
+</head>
+<body>
+    <div> 
+        <h1>Thank You</h1>
+        <p>
+            @Model.GoodsName
+            @Model.Goodslocation
+            @Model.GoodsNumber
+            @Model.GoodsPrice
+
+
+        </p>
+    </div>
+</body>
+</html>

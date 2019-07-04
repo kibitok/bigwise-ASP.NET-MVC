@@ -1,0 +1,53 @@
+﻿@model Bigwise.Models.Retailers
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>RetailersForm</title>
+</head>
+<body>
+    <div>
+        <div class="panel panel-success">
+            <div class="panel-heading text-center"><h4>Retailers</h4></div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+
+                {
+                    @Html.ValidationSummary()
+                    <p>Please Subscribe to our products and Notifications</p>
+                    <div class="form-group">
+                        <label>Retailers name:</label>
+                        @Html.TextBoxFor(x => x.RetailersName, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Retailers email:</label>
+                        @Html.TextBoxFor(x => x.RetailersEmail, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Retailers phone:</label>
+                        @Html.TextBoxFor(x => x.RetailersPhone, new { @class = "form-control" })
+                    </div>
+
+                    <div class="form-group">
+                        <label>Locaton:</label>
+                        @Html.TextBoxFor(x => x.Retailerslocation, new { @class = "form-control" })
+                    </div>
+                    
+                    <div class="text-center">
+                        <input class="btn btn-success" type="submit" value="Submit Retailers" />
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
